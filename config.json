@@ -8,8 +8,8 @@
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "CallFire Message",
-            "description": "Send a CallFire message",
+            "name": "The ListEngage Activity",
+            "description": "",
             "step1Label": "Configure Activity"
         }
     },
