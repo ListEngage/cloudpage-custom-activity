@@ -1,0 +1,70 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "icon": "images/callfire_logo_small.jpg",
+        "iconSmall": "images/callfire_logo_small.jpg",
+        "category": "message"
+    },
+    "type": "REST",
+    "lang": {
+        "en-US": {
+            "name": "CallFire Message",
+            "description": "Send a CallFire message",
+            "step1Label": "Configure Activity"
+        }
+    },
+    "arguments": {
+        "execute": {
+          "inArguments":[],
+          "outArguments": [],
+          "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=execute",
+           "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": true,
+            "timeout": 10000
+        }
+    },
+    "configurationArguments": {
+      "save": {
+        "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=save",
+          "verb": "POST",
+          "useJwt": false
+       },
+       "publish": {
+         "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=publish",
+         "verb": "POST",
+         "useJwt": false
+       },
+      "stop": {
+        "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=stop",
+        "verb": "POST",
+        "useJwt": false
+      },
+      "validate": {
+        "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=validate",
+        "verb": "POST",
+        "useJwt": false
+      }
+    },
+    "wizardSteps": [
+      { "label": "Configure Account", "key": "step1" }
+
+    ],
+    "userInterfaces": {
+        "configModal": {
+            "height": 650,
+            "width": 800,
+          "fullscreen": false
+        }
+    },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [],
+                "outArguments": []
+            }
+        }
+    }
+}
