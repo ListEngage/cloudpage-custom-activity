@@ -16,9 +16,7 @@
     "arguments": {
         "execute": {
           "inArguments":[],
-          "outArguments":[
-            { "outboundID":"number" }
-         ],
+          "outArguments":[],
           "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=execute",
            "verb": "POST",
             "body": "",
@@ -66,7 +64,9 @@
         "arguments": {
             "execute": {
                 "inArguments": [],
-                "outArguments": []
+                "outArguments": [{
+          "SFMCCallId": "number"
+        }]
             }
         }
     }
