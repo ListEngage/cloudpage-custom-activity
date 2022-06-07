@@ -16,7 +16,9 @@
     "arguments": {
         "execute": {
           "inArguments":[],
-          "outArguments": [],
+          "outArguments":[
+            { "outboundID":"number" }
+         ],
           "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=execute",
            "verb": "POST",
             "body": "",
