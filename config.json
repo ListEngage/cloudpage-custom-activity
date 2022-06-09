@@ -88,9 +88,12 @@
          "useJwt":false
       }
    },
-   "edit":{
-      "url":"https://domain.com/activity-path/",
-      "height":400,
-      "width":500
-   }
+  "userInterfaces": {
+        "configModal": {
+            "height": 650,
+            "width": 800,
+            "fullscreen": true,
+            "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/wdg02lvwzfg"
+        }
+    }
 }
