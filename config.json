@@ -1,73 +1,96 @@
 {
-    "workflowApiVersion": "1.1",
-    "metaData": {
-        "icon": "images/callfire_logo_small.jpg",
-        "iconSmall": "images/callfire_logo_small.jpg",
-        "category": "message"
-    },
-    "type": "REST",
-    "lang": {
-        "en-US": {
-            "name": "The ListEngage Activity",
-            "description": "",
-            "step1Label": "Configure Activity"
-        }
-    },
-    "arguments": {
-        "execute": {
-          "inArguments":[],
-          "outArguments":[],
-          "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=execute",
-           "verb": "POST",
-            "body": "",
-            "header": "",
-            "format": "json",
-            "useJwt": false,
-            "timeout": 10000
-        }
-    },
-    "configurationArguments": {
-      "save": {
-        "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=save",
-          "verb": "POST",
-          "useJwt": false
-       },
-       "publish": {
-         "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=publish",
-         "verb": "POST",
-         "useJwt": false
-       },
-      "stop": {
-        "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=stop",
-        "verb": "POST",
-        "useJwt": false
+   "workflowApiVersion":"1.0",
+   "metaData":{
+      "version":"2.0",
+      "icon":"images/activity-icon.png",
+      "iconSmall":"images/activity-icon-small.png"
+   },
+   "type":"REST",
+   "outcomes":[
+      {
+         "arguments":{
+            "branchResult":"wishlist_item",
+            "argument":"passed from config.json for wishlist_item"
+         }
       },
-      "validate": {
-        "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=validate",
-        "verb": "POST",
-        "useJwt": false
+      {
+         "arguments":{
+            "branchResult":"cart_item",
+            "argument":"passed from config.json for cart_item"
+         }
+      },
+      {
+         "arguments":{
+            "branchResult":"purchase_item",
+            "argument":"passed from config.json for purchase_item"
+         },
+         "metaData":{
+         "label":"Purchase"
+   }
       }
-    },
-    "wizardSteps": [
-      { "label": "Configure Account", "key": "step1" }
-
-    ],
-    "userInterfaces": {
-        "configModal": {
-            "height": 650,
-            "width": 800,
-            "fullscreen": true,
-            "url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/wdg02lvwzfg"
-        }
-    },
-    "schema": {
-        "arguments": {
-            "execute": {
-                "inArguments": [],
-                "outArguments": [{
-          "SFMCCallId": "number"
-        }]
-            }
-        }
-    }
+   ],
+   "lang":{
+      "en-US":{
+         "name":"Custom Split",
+         "description":"A Custom Split Activity with multiple outcomes",
+         "i18n_wishlist":"Wishlist",
+         "i18n_cart":"Cart",
+         "i18n_purchase":"Purchase"
+      }
+   },
+   "outcomeLabelLanguageMap":{
+      "wishlist_item":"i18n_wishlist",
+      "cart_item":"i18n_cart",
+      "purchase_item":"i18n_purchase"
+   },
+   "userInterfaces":{
+      "runningModal":{
+         "url":"https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/wdg02lvwzfg"
+      },
+      "runningHover":{
+         "url":"https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/wdg02lvwzfg"
+      }
+   },
+   "arguments":{
+      "execute":{
+         "inArguments":[],
+         "outArguments":[
+            { "caseID":"number" }
+         ],
+         "url":"https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=execute",
+         "verb":"POST",
+         "body":"",
+         "header":"",
+         "format":"json",
+         "useJwt":false,
+         "timeout":10000
+      }
+   },
+   "configurationArguments":{
+      "applicationExtensionKey":"extension-key-created-in-app-center",
+      "defaults":{ "name":"value" },
+      "save":{
+         "url":"https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=save",
+         "body":"",
+         "verb":"POST",
+         "useJwt":false
+      },
+      "publish":{
+         "url":"https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=publish",
+         "verb":"POST",
+         "body":"",
+         "useJwt":false
+      },
+      "validate":{
+         "url":"https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=validate",
+         "verb":"POST",
+         "body":"",
+         "useJwt":false
+      }
+   },
+   "edit":{
+      "url":"https://domain.com/activity-path/",
+      "height":400,
+      "width":500
+   }
 }
