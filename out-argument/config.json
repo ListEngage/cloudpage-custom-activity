@@ -9,7 +9,7 @@
 	"outcomes": [],
 	"lang": {
 		"en-US": {
-			"name": "ChatGPT - Sentiment Classifier",
+			"name": "ChatGPT - Survey Response",
 			"description": "A ChatGPT sentiment classifier",
 			"i18n_wishlist": "positive",
 			"i18n_cart": "neutral",
