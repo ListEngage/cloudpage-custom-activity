@@ -1,0 +1,83 @@
+{
+	"workflowApiVersion": "1.0",
+	"metaData": {
+		"version": "2.0",
+		"icon": "images/activity-icon.png",
+		"iconSmall": "images/activity-icon-small.png"
+	},
+	"type": "REST",
+	"outcomes": [],
+	"lang": {
+		"en-US": {
+			"name": "ChatGPT - Sentiment Classifier",
+			"description": "A ChatGPT sentiment classifier",
+			"i18n_wishlist": "positive",
+			"i18n_cart": "neutral",
+			"i18n_purchase": "negative"
+		}
+	},
+	"outcomeLabelLanguageMap": {
+		"positive": "i18n_wishlist",
+		"neutral": "i18n_cart",
+		"negative": "i18n_purchase"
+	},
+	"userInterfaces": {
+		"runningModal": {
+			"url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/wdg02lvwzfg"
+		},
+		"runningHover": {
+			"url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/wdg02lvwzfg"
+		},
+		"configModal": {
+			"height": 650,
+			"width": 800,
+			"fullscreen": true,
+			"url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/wdg02lvwzfg"
+		}
+	},
+	"arguments": {
+		"execute": {
+			"inArguments": [],
+			"outArguments": [
+		                {
+		                    "chatGPTResponse": {
+		                        "dataType": "Text",
+		                        "direction": "out",
+		                        "access": "visible"
+		                    }
+		                }
+			],
+			"url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=execute",
+			"verb": "POST",
+			"body": "",
+			"header": "",
+			"format": "json",
+			"useJwt": false,
+			"timeout": 10000
+		}
+	},
+	"configurationArguments": {
+		"applicationExtensionKey": "extension-key-created-in-app-center",
+		"defaults": {
+			"name": "value"
+		},
+		"save": {
+			"url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=save",
+			"body": "",
+			"verb": "POST",
+			"useJwt": false
+		},
+		"publish": {
+			"url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=publish",
+			"verb": "POST",
+			"body": "",
+			"useJwt": false
+		},
+		"validate": {
+			"url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=validate",
+			"verb": "POST",
+			"body": "",
+			"useJwt": false
+		}
+	}
+}
