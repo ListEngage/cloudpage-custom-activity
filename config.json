@@ -9,19 +9,19 @@
    "outcomes":[
       {
          "arguments":{
-            "branchResult":"wishlist_item",
+            "branchResult":"positive",
             "argument":"passed from config.json for wishlist_item"
          }
       },
       {
          "arguments":{
-            "branchResult":"cart_item",
+            "branchResult":"neutral",
             "argument":"passed from config.json for cart_item"
          }
       },
       {
          "arguments":{
-            "branchResult":"purchase_item",
+            "branchResult":"negative",
             "argument":"passed from config.json for purchase_item"
          },
          "metaData":{
@@ -31,17 +31,17 @@
    ],
    "lang":{
       "en-US":{
-         "name":"Custom Split",
-         "description":"A Custom Split Activity with multiple outcomes",
-         "i18n_wishlist":"Wishlist",
-         "i18n_cart":"Cart",
-         "i18n_purchase":"Purchase"
+         "name":"ChatGPT - Sentiment Classifier",
+         "description":"A ChatGPT sentiment classifier",
+         "i18n_wishlist":"positive",
+         "i18n_cart":"neutral",
+         "i18n_purchase":"negative"
       }
    },
    "outcomeLabelLanguageMap":{
-      "wishlist_item":"i18n_wishlist",
-      "cart_item":"i18n_cart",
-      "purchase_item":"i18n_purchase"
+      "positive":"i18n_wishlist",
+      "neutral":"i18n_cart",
+      "negative":"i18n_purchase"
    },
    "userInterfaces":{
       "runningModal":{
@@ -55,7 +55,6 @@
       "execute":{
          "inArguments":[],
          "outArguments":[
-            { "caseID":"number" }
          ],
          "url":"https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/a1prgara1l4?action=execute",
          "verb":"POST",
