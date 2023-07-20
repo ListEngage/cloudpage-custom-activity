@@ -79,5 +79,22 @@
 			"body": "",
 			"useJwt": false
 		}
-	}
+	},
+	"schema": {
+	        "arguments": {
+	            "execute": {
+	                "inArguments": [],
+	                "outArguments": [
+	                    {
+	                      "chatGPTResponse": {
+	                       "dataType": "Text",
+	                       "isNullable": true,
+	                       "access": "Visible",
+	                       "direction": "Out"
+	                   }
+	                 }
+	              ]
+	            }
+	        }
+    }
 }
