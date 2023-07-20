@@ -13,19 +13,25 @@
             "argument":"passed from config.json for wishlist_item"
          }
       },
+         "metaData":{
+         "label":"Positive Sentiment"
+   },
       {
          "arguments":{
             "branchResult":"neutral",
             "argument":"passed from config.json for cart_item"
          }
       },
+         "metaData":{
+         "label":"Neutral Sentiment"
+   },
       {
          "arguments":{
             "branchResult":"negative",
             "argument":"passed from config.json for purchase_item"
          },
          "metaData":{
-         "label":"Purchase"
+         "label":"Negative Sentiment"
    }
       }
    ],
