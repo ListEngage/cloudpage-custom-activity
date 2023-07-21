@@ -8,8 +8,7 @@
 	"type": "REST",
 	"outcomes": [{
 			"arguments": {
-				"branchResult": "positive",
-				"argument": "passed from config.json for wishlist_item"
+				"branchResult": "positive"
 			},
 			"metaData": {
 				"label": "Positive Sentiment"
@@ -18,8 +17,7 @@
 
 		{
 			"arguments": {
-				"branchResult": "neutral",
-				"argument": "passed from config.json for cart_item"
+				"branchResult": "neutral"
 			},
 			"metaData": {
 				"label": "Neutral Sentiment"
@@ -28,8 +26,7 @@
 
 		{
 			"arguments": {
-				"branchResult": "negative",
-				"argument": "passed from config.json for purchase_item"
+				"branchResult": "negative"
 			},
 			"metaData": {
 				"label": "Negative Sentiment"
