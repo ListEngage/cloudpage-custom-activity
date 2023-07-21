@@ -5,7 +5,7 @@
 		"icon": "images/activity-icon.png",
 		"iconSmall": "images/activity-icon-small.png"
 	},
-	"type": "REST",
+	"type": "RestDecision",
 	"outcomes": [{
 			"arguments": {
 				"branchResult": "positive"
