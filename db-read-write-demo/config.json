@@ -1,0 +1,92 @@
+{
+	"workflowApiVersion": "1.0",
+	"metaData": {
+		"version": "2.0",
+		"icon": "",
+		"iconSmall": ""
+	},
+	"type": "REST",
+	"outcomes": [],
+	"lang": {
+		"en-US": {
+			"name": "DB Connect Demo",
+			"description": "Connect to a external DB system"
+		}
+	},
+	"userInterfaces": {
+		"runningModal": {
+			"url": ""
+		},
+		"runningHover": {
+			"url": ""
+		},
+		"configModal": {
+			"height": 600,
+			"width": 800,
+			"fullscreen": false,
+			"url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/2c4mkggj2vj"
+		}
+	},
+	"arguments": {
+		"execute": {
+			"inArguments": [],
+			"outArguments": [
+        {
+            "customActivityOutput": {
+                "dataType": "Text",
+                "direction": "out",
+                "access": "visible"
+            }
+        }
+			],
+			"url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/rhofsx2m1di?action=execute",
+			"verb": "POST",
+			"body": "",
+			"header": "",
+			"format": "json",
+			"useJwt": false,
+			"timeout": 10000
+		}
+	},
+	"configurationArguments": {
+		"applicationExtensionKey": "extension-key-created-in-app-center",
+		"defaults": {
+			"name": "value"
+		},
+		"save": {
+			"url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/rhofsx2m1di?action=save",
+			"body": "",
+			"verb": "POST",
+			"useJwt": false
+		},
+		"publish": {
+			"url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/rhofsx2m1di?action=publish",
+			"verb": "POST",
+			"body": "",
+			"useJwt": false
+		},
+		"validate": {
+			"url": "https://mc8bngdnyxrlpd7f3cnly19fsbx4.pub.sfmc-content.com/rhofsx2m1di?action=validate",
+			"verb": "POST",
+			"body": "",
+			"useJwt": false
+		}
+	},
+	"schema": {
+	        "arguments": {
+	            "execute": {
+	                "inArguments": [],
+	                "outArguments": [
+	                    {
+	                      "customActivityOutput": {
+	                       "dataType": "Text",
+	                       "isNullable": true,
+	                       "access": "Visible",
+	                       "direction": "Out"
+	                   }
+	                 }
+	              ]
+	            }
+	        }
+    }
+}
